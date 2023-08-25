@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ModuleController">
+
+    <Label text="Module Input"/>
+
+    <HBox>
+        <Label text="Module Name:"/>
+        <TextField fx:id="moduleNameTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Module Code:"/>
+        <TextField fx:id="moduleCodeTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Credits:"/>
+        <TextField fx:id="creditsTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Semester:"/>
+        <TextField fx:id="semesterTextField"/>
+    </HBox>
+
+    <Button text="Add Module" onAction="#addModule"/>
+    <Button text="Remove Module" onAction="#removeModule"/>
+    <Button text="Edit Module" onAction="#editModule"/>
+
+    <ListView fx:id="moduleListView"/>
+</VBox>

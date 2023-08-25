@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.StudentController">
+
+    <Label text="Student Record Input"/>
+
+    <HBox>
+        <Label text="Name:"/>
+        <TextField fx:id="nameTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="ID:"/>
+        <TextField fx:id="idTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Date of Birth:"/>
+        <TextField fx:id="dobTextField"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Current Semester:"/>
+        <TextField fx:id="semesterTextField"/>
+    </HBox>
+
+    <Button text="Add Student" onAction="#addStudent"/>
+    <Button text="Remove Student" onAction="#removeStudent"/>
+    <Button text="Edit Student" onAction="#editStudent"/>
+
+    <ListView fx:id="studentListView"/>
+</VBox>

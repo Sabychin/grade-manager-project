@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.GradeController">
+
+    <Label text="Grade Input"/>
+
+    <HBox>
+        <Label text="Select Student:"/>
+        <ComboBox fx:id="studentComboBox"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Select Module:"/>
+        <ComboBox fx:id="moduleComboBox"/>
+    </HBox>
+
+    <HBox>
+        <Label text="Grade:"/>
+        <TextField fx:id="gradeTextField"/>
+    </HBox>
+
+    <Button text="Add Grade" onAction="#addGrade"/>
+    <Button text="Delete Grade" onAction="#deleteGrade"/>
+
+    <TableView fx:id="gradeTableView">
+        <columns>
+            <TableColumn text="Student"/>
+            <TableColumn text="Module"/>
+            <TableColumn text="Grade"/>
+        </columns>
+    </TableView>
+</VBox>
